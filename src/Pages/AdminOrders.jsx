@@ -19,7 +19,7 @@ function AdminOrders() {
   const [error, setError] = useState("");
   const [updatingId, setUpdatingId] = useState("");
 
-  const API_URL = "http://localhost:5000/api/orders";
+  const API_URL = "https://timezone-backend-v4ra.onrender.com/api/orders";
 
   const fetchOrders = async () => {
     try {

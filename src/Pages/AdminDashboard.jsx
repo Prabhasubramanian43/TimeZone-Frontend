@@ -33,7 +33,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products", {
+        const response = await fetch("https://timezone-backend-v4ra.onrender.com/api/products", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken") || ""}`,
           },
@@ -63,7 +63,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/orders/stats", {
+        const response = await fetch("https://timezone-backend-v4ra.onrender.com/api/orders/stats", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken") || ""}`,
           },
@@ -95,7 +95,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/stats", {
+        const response = await fetch("https://timezone-backend-v4ra.onrender.com/api/auth/stats", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken") || ""}`,
           },

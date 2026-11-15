@@ -78,7 +78,7 @@ function Categories() {
   useEffect(() => {
     let active = true;
 
-    fetch("http://localhost:5000/api/products")
+    fetch("https://timezone-backend-v4ra.onrender.com/api/products")
       .then(async (response) => {
         const data = await response.json();
         if (!response.ok) {

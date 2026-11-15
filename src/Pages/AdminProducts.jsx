@@ -9,7 +9,7 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa";
 
-const API = "http://localhost:5000/api";
+const API = "https://timezone-backend-v4ra.onrender.com/api";
 const authHeaders = () => ({
   Authorization: `Bearer ${localStorage.getItem("authToken") || ""}`,
 });
